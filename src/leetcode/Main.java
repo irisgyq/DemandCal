@@ -5,36 +5,33 @@ public class Main {
     public static void main(String[] args) {
         // write your code here
         Main m = new Main();
-        boolean flag = false;
+        boolean flag=false;
         System.out.println("---------Welcome to my calculator-------------");
         do {
             System.out.println("start or end?");
             Scanner scan = new Scanner(System.in);
             String ins = scan.nextLine();
-            if (ins.equals("start")) {
-                flag = true;
-                m.calculator();
-            } else if (ins.equals("end")) {
-                flag = false;
-                m.off();
-            }  else {
-                System.out.println("Nonono! You need to tell me 'start' or 'end'...");
-                flag = true;
+            switch(ins){
+                case "start":
+                    flag = true;
+                    m.calculator();
+                    break;
+                case "end":
+                    flag = false;
+                    m.off();
+                    break;
+                default:
+                    System.out.println("Nonono! You need to tell me 'start' or 'end'...");
             }
         } while (flag);
     }
 
-    public void reset() {
-        Main m = new Main();
-        m.calculator();
-    }
-
-    public void off(){
+    private void off(){
         System.exit(0);
     }
 
-    public void calculator() {
-        boolean isValid = true;
+    void calculator() {
+        boolean isValid;
         String FinalInput;
         do {
             System.out.println("Please input an operation:");

@@ -3,18 +3,17 @@ package leetcode;
 import java.util.ArrayList;
 import java.util.Stack;
 
-public class Calculate {
+class Calculate {
     private Stack<Double> numStk = new Stack<>();
     private Stack<String> opeStk = new Stack<>();
 
-    public double calculate(String s) {
+    double calculate(String s) {
 
         Input in = new Input();
         ArrayList<String> operation = in.processInput(s);
         operation.add("equals");
 
-        double num1, num2;
-        double res;
+        double num1, num2, res;
         String ope;
 
         for(int i=0;i<operation.size();i++) {
@@ -22,13 +21,11 @@ public class Calculate {
                 numStk.push(Double.parseDouble(operation.get(i)));
             } else {
                 opeStk.push(operation.get(i));
-
                 while (compareOpe(opeStk.pop(), operation ,i)) {
                     if(opeStk.empty()){
                         break;
                     }
                     ope = opeStk.pop();
-
                     switch (ope) {
                         case "add": {
                             num1 = numStk.pop();
@@ -115,20 +112,15 @@ public class Calculate {
 
         }
 
-
         res = numStk.pop();
         return res;
 
     }
 
-    public boolean compareOpe (String ope, ArrayList operation ,int i) {
+    private boolean compareOpe (String ope, ArrayList operation ,int i) {
 
-        if (opeStk.empty() && i==operation.size()-1) {
-            return true;
-        }
-
-        if (opeStk.empty()){
-            return false;
+        if (opeStk.empty()) {
+            return i==operation.size()-1;
         }
 
         String preOpe = opeStk.peek();
@@ -141,43 +133,21 @@ public class Calculate {
                 return true;
             }
             case "mul": {
-                if(preOpe.equals("add") || preOpe.equals("sub")|| preOpe.equals("lbrace")) {
-                    return false;
-                } else {
-                    return true;
-                }
+                return !(preOpe.equals("add") || preOpe.equals("sub")|| preOpe.equals("lbrace"));
             }
             case "div": {
-                if(preOpe.equals("add") || preOpe.equals("sub") || preOpe.equals("lbrace")) {
-                    return false;
-                } else {
-                    return true;
-                }
+                return !(preOpe.equals("add") || preOpe.equals("sub") || preOpe.equals("lbrace"));
+
             }
             case "add": {
-                if (preOpe.equals("mul") || preOpe.equals("div")){
-                    return true;
-                } else if(preOpe.equals("lbrace") || operation.get(i+2).equals("mul") || operation.get(i+2).equals("div") || operation.get(i+2).equals("mod")|| operation.get(i+2).equals("pow") || operation.get(i+2).equals("rbrace") ) {
-                    return false;
-                } else {
-                    return true;
-                }
+                return preOpe.equals("mul") || preOpe.equals("div") || !(preOpe.equals("lbrace") || operation.get(i+2).equals("mul") || operation.get(i+2).equals("div") || operation.get(i+2).equals("mod")|| operation.get(i+2).equals("pow") || operation.get(i+2).equals("rbrace") );
             }
             case "sub": {
-                if (preOpe.equals("mul") || preOpe.equals("div")){
-                    return true;
-                } else if(preOpe.equals("lbrace") || operation.get(i+2).equals("mul") || operation.get(i+2).equals("div") || operation.get(i+2).equals("mod")|| operation.get(i+2).equals("pow") || operation.get(i+2).equals("rbrace")) {
-                    return false;
-                } else {
-                    return true;
-                }
+                return preOpe.equals("mul") || preOpe.equals("div") || !(preOpe.equals("lbrace") || operation.get(i+2).equals("mul") || operation.get(i+2).equals("div") || operation.get(i+2).equals("mod")|| operation.get(i+2).equals("pow") || operation.get(i+2).equals("rbrace"));
             }
 
             default:
                 return true;
         }
-
     }
-
 }
-
