@@ -3,9 +3,6 @@ package leetcode;
 import java.util.ArrayList;
 import java.util.Stack;
 
-/**
- * Created by irisgyq on 2017/6/2.
- */
 public class Calculate {
     private Stack<Double> numStk = new Stack<>();
     private Stack<String> opeStk = new Stack<>();
