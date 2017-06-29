@@ -49,4 +49,3 @@ public class Main {
         System.out.println("The result is "+cal.calculate(FinalInput));
     }
 }
-

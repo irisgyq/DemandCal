@@ -2,152 +2,101 @@ package leetcode;
 
 import java.util.ArrayList;
 import java.util.Stack;
+import java.util.Queue;
+import java.util.LinkedList;
 
-class Calculate {
-    private Stack<Double> numStk = new Stack<>();
-    private Stack<String> opeStk = new Stack<>();
+public class Calculate {
+    private Queue<Object> q = new LinkedList<>();
+    private Stack<Object> op = new Stack<>();
 
-    double calculate(String s) {
+    public Queue<Object> exchange(String s) {
 
         Input in = new Input();
-        ArrayList<String> operation = in.processInput(s);
-        operation.add("equals");
+        ArrayList<Object> operation = in.processInput(s);
 
-        double num1, num2, res;
-        String ope;
-
-        for(int i=0;i<operation.size();i++) {
-            if (Character.isDigit(operation.get(i).charAt(0))) {
-                numStk.push(Double.parseDouble(operation.get(i)));
+        for (int i = 0; i < operation.size(); i++) {
+            if (Character.isDigit(operation.get(i).toString().charAt(0))) {
+                q.add(operation.get(i));
+            } else if (operation.get(i).equals("(")) {
+                op.push(operation.get(i));
+            } else if (operation.get(i).equals(")")) {
+                while (!op.empty() && !op.peek().equals("(")) {
+                    q.add(op.pop());
+                }
+                op.pop();
             } else {
-                opeStk.push(operation.get(i));
-                while (compareOpe(opeStk.pop(), operation ,i)) {
-                    if(opeStk.empty()){
-                        break;
-                    }
-                    ope = opeStk.pop();
-                    switch (ope) {
-                        case "add": {
-                            num1 = numStk.pop();
-                            num2 = numStk.pop();
-                            numStk.push(num2 + num1);
-                            if(!opeStk.empty() && opeStk.peek().equals("div") && numStk.peek()==0) {
-                                System.out.println("Divisor can't be zero.");
-                                Main m = new Main();
-                                m.calculator();
-                                System.exit(0);
-                            }
-                            break;
-
-                        }
-                        case "sub": {
-                            num1 = numStk.pop();
-                            num2 = numStk.pop();
-                            numStk.push(num2 - num1);
-                            if(!opeStk.empty() && opeStk.peek().equals("div") && numStk.peek()==0) {
-                                System.out.println("Divisor can't be zero.");
-                                Main m = new Main();
-                                m.calculator();
-                                System.exit(0);
-                            }
-                            break;
-
-                        }
-                        case "mul": {
-                            num1 = numStk.pop();
-                            num2 = numStk.pop();
-                            numStk.push(num2 * num1);
-                            if(!opeStk.empty() && opeStk.peek().equals("div") && numStk.peek()==0) {
-                                System.out.println("Divisor can't be zero.");
-                                Main m = new Main();
-                                m.calculator();
-                                System.exit(0);
-                            }
-
-                            break;
-
-                        }
-                        case "div": {
-                            num1 = numStk.pop();
-                            num2 = numStk.pop();
-                            if(num1==0){
-                                System.out.println("Divisor can't be zero.");
-                                Main m = new Main();
-                                m.calculator();
-                                System.exit(0);
-                            }
-                            numStk.push(num2 / num1);
-                            if(!opeStk.empty() && opeStk.peek().equals("div") && numStk.peek()==0) {
-                                System.out.println("Divisor can't be zero.");
-                                Main m = new Main();
-                                m.calculator();
-                                System.exit(0);
-                            }
-
-                            break;
-
-                        }
-
-                        default:
-                            break;
-                    }
-
-                    if(!opeStk.empty() && operation.get(i).equals("rbrace") && opeStk.contains("lbrace") && !opeStk.peek().equals("lbrace")) {
-                        opeStk.push(operation.get(i));
-                    } else if(!opeStk.empty() &&operation.get(i).equals("rbrace") && opeStk.peek().equals("lbrace")){
-                        opeStk.pop();
-                        break;
-                    } else if(i==operation.size()-1 && !opeStk.isEmpty()){
-                        opeStk.push("equals");
-                    } else {
-                        break;
-                    }
-
+                while (!op.empty() && compareOpe(operation.get(i).toString(), op.peek().toString())) {
+                    q.add(op.pop());
                 }
-
-                if (!operation.get(i).equals("equals") && !operation.get(i).equals("rbrace")) {
-                    opeStk.push(operation.get(i));
-                }
+                op.push(operation.get(i));
             }
-
         }
-
-        res = numStk.pop();
-        return res;
-
+        while (!op.empty()) {
+            q.add(op.pop());
+        }
+        return q;
     }
 
-    private boolean compareOpe (String ope, ArrayList operation ,int i) {
+    public double calculate(String s) {
+       double num1, num2, num;
+       Queue<Object> q =  exchange(s);
+       Stack<Double> val = new Stack<>();
+       while(!q.isEmpty()) {
+           if (Character.isDigit(q.peek().toString().charAt(0))) {
+               val.push(Double.valueOf(q.poll().toString()));
+           } else if (q.peek().equals("+")) {
+               num1 = val.pop();
+               num2 = val.pop();
+               val.push(num1 + num2);
+               q.poll();
+           } else if (q.peek().equals("-")) {
+               num1 = val.pop();
+               num2 = val.pop();
+               val.push(num2 - num1);
+               q.poll();
+           } else if (q.peek().equals("*")) {
+               num1 = val.pop();
+               num2 = val.pop();
+               val.push(num1 * num2);
+               q.poll();
+           } else if (q.peek().equals("/")) {
+               num1 = val.pop();
+               num2 = val.pop();
+               if (num2 == 0) {
+                   System.out.println("Divisor can't be zero.");
+                   Main m = new Main();
+                   m.calculator();
+                   System.exit(0);
 
-        if (opeStk.empty()) {
-            return i==operation.size()-1;
-        }
+               }
+               val.push(num2 / num1);
+               q.poll();
+           }
+       }
+       return val.pop();
+    }
 
-        String preOpe = opeStk.peek();
-
-        switch (ope) {
-            case "lbrace": {
-                return false;
+    public boolean compareOpe (String op1, String op2 ) {
+        switch (op1) {
+            case "*": {
+                return (op2.equals("*") || op2.equals("/") );
             }
-            case "rbrace": {
-                return true;
+            case "/": {
+                return (op2.equals("*") || op2.equals("/"));
             }
-            case "mul": {
-                return !(preOpe.equals("add") || preOpe.equals("sub")|| preOpe.equals("lbrace"));
+            case "+": {
+                return (op2.equals("*") || op2.equals("/") || op2.equals("+") || op2.equals("-"));
             }
-            case "div": {
-                return !(preOpe.equals("add") || preOpe.equals("sub") || preOpe.equals("lbrace"));
-
+            case "-": {
+                return (op2.equals("*") || op2.equals("/") || op2.equals("+") || op2.equals("-"));
             }
-            case "add": {
-                return preOpe.equals("mul") || preOpe.equals("div") || !(preOpe.equals("lbrace") || operation.get(i+2).equals("mul") || operation.get(i+2).equals("div") || operation.get(i+2).equals("mod")|| operation.get(i+2).equals("pow") || operation.get(i+2).equals("rbrace") );
-            }
-            case "sub": {
-                return preOpe.equals("mul") || preOpe.equals("div") || !(preOpe.equals("lbrace") || operation.get(i+2).equals("mul") || operation.get(i+2).equals("div") || operation.get(i+2).equals("mod")|| operation.get(i+2).equals("pow") || operation.get(i+2).equals("rbrace"));
-            }
-
             default:
                 return true;
         }
+    }
+
+    public void reset(){
+        q.clear();
+        op.removeAllElements();
     }
 }
