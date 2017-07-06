@@ -31,7 +31,7 @@ public class Main {
     }
 
     void calculator() {
-        boolean isValid;
+        boolean isValid = false;
         String FinalInput;
         do {
             System.out.println("Please input an operation:");
@@ -39,13 +39,13 @@ public class Main {
             Scanner scan = new Scanner(System.in);
             String inputS = scan.nextLine();
 
-            Input input = new Input();
+            InputTree input = new InputTree();
             isValid = input.InputValid(inputS);
             FinalInput =inputS.replaceAll(" ","");
 
         } while (!isValid);
-
-        Calculate cal = new Calculate();
-        System.out.println("The result is "+cal.calculate(FinalInput));
+        CalculateTree cal = new CalculateTree();
+        InputTree in = new InputTree();
+        System.out.println("The result is "+cal.calculate(cal.createTree(in.Tokenize(FinalInput))));
     }
 }
