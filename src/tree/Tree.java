@@ -1,17 +1,15 @@
-package leetcode;
-import leetcode.Node;
-import java.util.*;
+package tree;
 
-public class Tree <T> {
+public class Tree<T> {
 
     private T root;
 
-    public Tree(){
+    public Tree() {
         root = null;
     }
 
     public boolean isEmpty() {
-        return root==null;
+        return root == null;
     }
 
     public T getRoot() {
@@ -21,4 +19,5 @@ public class Tree <T> {
     public void setRoot(T node) {
         root = node;
     }
+
 }

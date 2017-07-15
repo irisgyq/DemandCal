@@ -1,4 +1,4 @@
-package leetcode;
+package calculator;
 
 public enum Operator {
     ADD(43), SUB(45), MUL(42), DIV(47), LEFT_BRACE(40), RIGHT_BRACE(41);
@@ -9,7 +9,7 @@ public enum Operator {
         this.value = value;
     }
 
-    public int getValue(){
+    public int getValue() {
         return value;
     }
 }

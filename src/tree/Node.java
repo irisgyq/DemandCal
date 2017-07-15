@@ -1,18 +1,21 @@
-package leetcode;
+package tree;
 
 public class Node {
     private int value;
+    private String type;
     private Node left;
     private Node right;
 
-    public Node(){
+    public Node() {
         this.value = 0;
+        this.type = "";
         this.left = null;
         this.right = null;
     }
 
-    Node(int value){
+    public Node(int value, String type) {
         this.value = value;
+        this.type = type;
         this.left = null;
         this.right = null;
     }
@@ -21,13 +24,12 @@ public class Node {
         return value;
     }
 
-    public Class getName() {
-        return getClass();
-    }
+    public String getType() { return type;}
 
-    public Node(int value, Node left, Node right){
+    public Node(int value, String type, Node left, Node right) {
         super();
         this.value = value;
+        this.type = type;
         this.left = left;
         this.right = right;
     }
@@ -40,11 +42,11 @@ public class Node {
         return right;
     }
 
-    public void setLeft(Node left){
+    public void setLeft(Node left) {
         this.left = left;
     }
 
-    public void setRight(Node right){
+    public void setRight(Node right) {
         this.right = right;
     }
 }
