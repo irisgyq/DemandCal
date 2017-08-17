@@ -18,7 +18,7 @@ public class Calculate {
         int flag = 0;
         int pos1 = 0;
         int pos2 = 0;
-
+        Node n3 = null;
         for (int i = 0; i < ar.size(); i = i + 2) {
             if (ar.get(i).getType().equals("Operator") && ar.get(i).getValue() == Operator.LEFT_BRACE.getValue()) {
                 flag++;
@@ -92,14 +92,6 @@ public class Calculate {
                     n.setRight(n4);
                 } else {
                     Node n5 = new Node(ar.get(i + 1).getValue(),ar.get(i + 1).getType());
-                    Node n3 = null;
-                    if(i>=2){
-                        if(t.getRoot().getRight() != null){
-                            n3 = t.getRoot().getRight();
-                        } else {
-                            n3 = t.getRoot();
-                        }
-                    }
                     if (n5.getType().equals("Operator") && n4.getType().equals("Number")) {
                         n5.setLeft(n4);
                     }
@@ -108,15 +100,33 @@ public class Calculate {
                     } else if (i >= 2 && compareOpe(ar.get(i + 1), ar.get(i - 1))) {
                         n3.setRight(n5);
                     } else {
+                        Node n6 = t.getRoot();
+                        Stack<Node> stk = new Stack<>();
+                        stk.push(n6);
+                        while(n6.getRight()!=null && n6.getRight() != n3){
+                            n6 = n6.getRight();
+                            stk.push(n6);
+                        }
                         n3.setRight(n4);
-                        if (compareOpe(ar.get(i + 1), new Token(t.getRoot().getValue(), t.getRoot().getType()))) {
-                            n5.setLeft(n3);
-                            t.getRoot().setRight(n5);
-                        } else {
-                            n5.setLeft(t.getRoot());
-                            t.setRoot(n5);
+                        Node tmpp=n3;
+                        while(!stk.isEmpty()){
+                            Node tmpn = stk.pop();
+                            if (compareOpe(ar.get(i + 1), new Token(tmpn.getValue(),tmpn.getType()))) {
+                                n5.setLeft(tmpp);
+                                tmpn.setRight(n5);
+                            } else {
+                                tmpp = tmpn;
+                                n5.setLeft(tmpn);
+                                if(!stk.isEmpty()){
+                                    stk.peek().setRight(n5);
+                                } else {
+                                    t.setRoot(n5);
+                                }
+
+                            }
                         }
                     }
+                    n3 = n5;
                 }
             }
         }
@@ -125,6 +135,9 @@ public class Calculate {
 
     private boolean compareOpe(Token op1, Token op2) {
         switch (op1.getValue()) {
+            case 94: {
+                return (op2.getValue() == 43 || op2.getValue() == 45 || op2.getValue() == 42 || op2.getValue() == 47);
+            }
             case 42: {
                 return (op2.getValue() == 43 || op2.getValue() == 45);
             }
@@ -164,6 +177,11 @@ public class Calculate {
                 num1 = val.pop();
                 num2 = val.pop();
                 val.push(num1 * num2);
+                q.poll();
+            } else if (n.getType().equals("Operator") && n.getValue() == Operator.POW.getValue()) {
+                num1 = val.pop();
+                num2 = val.pop();
+                val.push(Math.pow(num2, num1));
                 q.poll();
             } else if (n.getType().equals("Operator") && n.getValue() == Operator.DIV.getValue()) {
                 num1 = val.pop();

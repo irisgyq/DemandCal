@@ -50,7 +50,7 @@ public class InputProcess {
                             j = s.length();
                         }
                     }
-                } else if (ic == Operator.ADD.getValue() || ic == Operator.SUB.getValue() || ic == Operator.MUL.getValue() || ic == Operator.DIV.getValue() || ic == Operator.RIGHT_BRACE.getValue()) {
+                } else if (ic == Operator.ADD.getValue() || ic == Operator.SUB.getValue() || ic == Operator.MUL.getValue() || ic == Operator.DIV.getValue() || ic == Operator.RIGHT_BRACE.getValue() || ic == Operator.POW.getValue()) {
                     arr.add(new Token(ic,"Operator"));
                 } else {
                     arr.add(null);
