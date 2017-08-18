@@ -222,6 +222,21 @@ public class CalculateTest {
         double r8 = -8;
         assertTrue(res8 == r8);
 
+        String s9 = "1+log2+6*9/2^3";
+        double res9 = t0.calculate(t0.createTree(i.tokenize(s9)));
+        double r9 = 8.75;
+        assertTrue(res9 == r9);
+
+        String s10 = "√16-(2+3)^2";
+        double res10 = t0.calculate(t0.createTree(i.tokenize(s10)));
+        double r10 = -21;
+        assertTrue(res10 == r10);
+
+        String s11 = "√(1+2^3)";
+        double res11 = t0.calculate(t0.createTree(i.tokenize(s11)));
+        double r11 = 3;
+        assertTrue(res11 == r11);
+
 
     }
 
