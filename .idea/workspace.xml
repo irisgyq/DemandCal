@@ -5,7 +5,9 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/calculator/Calculate.java" afterPath="$PROJECT_DIR$/src/calculator/Calculate.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/calculator/InputProcess.java" afterPath="$PROJECT_DIR$/src/calculator/InputProcess.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/calculator/Operator.java" afterPath="$PROJECT_DIR$/src/calculator/Operator.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/calculator/Token.java" afterPath="$PROJECT_DIR$/src/calculator/Token.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/calculator/CalculateTest.java" afterPath="$PROJECT_DIR$/src/test/calculator/CalculateTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/tree/Node.java" afterPath="$PROJECT_DIR$/src/tree/Node.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -39,8 +41,8 @@
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/calculator/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-145">
-              <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+            <state relative-caret-position="465">
+              <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -49,12 +51,12 @@
       <file leaf-file-name="InputProcess.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/calculator/InputProcess.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="157" column="11" lean-forward="false" selection-start-line="157" selection-start-column="11" selection-end-line="157" selection-end-column="11" />
+            <state relative-caret-position="315">
+              <caret line="205" column="32" lean-forward="false" selection-start-line="205" selection-start-column="32" selection-end-line="205" selection-end-column="32" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#257#264#0" expanded="true" />
-                <element signature="e#8336#8343#0" expanded="true" />
+                <element signature="e#280#287#0" expanded="true" />
+                <element signature="e#12162#12169#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -63,12 +65,12 @@
       <file leaf-file-name="Token.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/calculator/Token.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="243">
-              <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+            <state relative-caret-position="207">
+              <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
               <folding>
-                <element signature="e#294#295#0" expanded="true" />
-                <element signature="e#327#328#0" expanded="true" />
-                <element signature="e#390#391#0" expanded="true" />
+                <element signature="e#336#337#0" expanded="true" />
+                <element signature="e#367#368#0" expanded="true" />
+                <element signature="e#399#400#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -77,8 +79,8 @@
       <file leaf-file-name="Calculate.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/calculator/Calculate.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="132">
-              <caret line="113" column="28" lean-forward="true" selection-start-line="113" selection-start-column="28" selection-end-line="113" selection-end-column="28" />
+            <state relative-caret-position="150">
+              <caret line="154" column="103" lean-forward="false" selection-start-line="154" selection-start-column="103" selection-end-line="154" selection-end-column="103" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -89,19 +91,18 @@
       <file leaf-file-name="Node.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/tree/Node.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="271">
-              <caret line="26" column="29" lean-forward="false" selection-start-line="26" selection-start-column="29" selection-end-line="26" selection-end-column="29" />
+            <state relative-caret-position="228">
+              <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
               <folding>
-                <element signature="e#441#442#0" expanded="true" />
-                <element signature="e#469#470#0" expanded="true" />
-                <element signature="e#740#741#0" expanded="true" />
-                <element signature="e#767#768#0" expanded="true" />
-                <element signature="e#797#798#0" expanded="true" />
-                <element signature="e#825#826#0" expanded="true" />
-                <element signature="e#863#864#0" expanded="true" />
-                <element signature="e#895#896#0" expanded="true" />
-                <element signature="e#935#936#0" expanded="true" />
-                <element signature="e#969#970#0" expanded="true" />
+                <element signature="e#478#479#0" expanded="true" />
+                <element signature="e#752#753#0" expanded="true" />
+                <element signature="e#779#780#0" expanded="true" />
+                <element signature="e#809#810#0" expanded="true" />
+                <element signature="e#837#838#0" expanded="true" />
+                <element signature="e#875#876#0" expanded="true" />
+                <element signature="e#907#908#0" expanded="true" />
+                <element signature="e#947#948#0" expanded="true" />
+                <element signature="e#981#982#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -110,11 +111,11 @@
       <file leaf-file-name="Tree.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/tree/Tree.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="124">
-              <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+            <state relative-caret-position="120">
+              <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
               <folding>
                 <element signature="e#78#79#0" expanded="true" />
-                <element signature="e#105#106#0" expanded="true" />
+                <element signature="e#198#199#0" expanded="true" />
                 <element signature="e#230#231#0" expanded="true" />
                 <element signature="e#265#266#0" expanded="true" />
                 <element signature="e#292#293#0" expanded="true" />
@@ -123,53 +124,27 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CalculateTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/calculator/CalculateTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="121">
-              <caret line="234" column="30" lean-forward="false" selection-start-line="234" selection-start-column="22" selection-end-line="234" selection-end-column="30" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="InputProcessTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/calculator/InputProcessTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2760">
-              <caret line="224" column="0" lean-forward="false" selection-start-line="224" selection-start-column="0" selection-end-line="224" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#803#810#0" expanded="true" />
-                <element signature="e#3680#3687#0" expanded="true" />
-                <element signature="e#4015#4022#0" expanded="true" />
-                <element signature="e#4223#4230#0" expanded="true" />
-                <element signature="e#4431#4438#0" expanded="true" />
-                <element signature="e#4745#4752#0" expanded="true" />
-                <element signature="e#5180#5187#0" expanded="true" />
-                <element signature="e#5533#5540#0" expanded="true" />
-                <element signature="e#5886#5893#0" expanded="true" />
-                <element signature="e#6453#6460#0" expanded="true" />
-                <element signature="e#6840#6847#0" expanded="true" />
-                <element signature="e#7132#7139#0" expanded="true" />
-                <element signature="e#7498#7505#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Operator.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/calculator/Operator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="5" lean-forward="true" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
+            <state relative-caret-position="180">
+              <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
               <folding>
-                <element signature="e#230#231#0" expanded="true" />
-                <element signature="e#264#265#0" expanded="true" />
-                <element signature="e#293#294#0" expanded="true" />
-                <element signature="e#321#322#0" expanded="true" />
+                <element signature="e#270#271#0" expanded="true" />
+                <element signature="e#304#305#0" expanded="true" />
+                <element signature="e#361#362#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CalculateTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/calculator/CalculateTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="3690">
+              <caret line="246" column="33" lean-forward="true" selection-start-line="246" selection-start-column="33" selection-end-line="246" selection-end-column="33" />
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -266,10 +241,10 @@
         <option value="$PROJECT_DIR$/src/tree/NumberNode.java" />
         <option value="$PROJECT_DIR$/src/test/calculator/CalculateTreeTest.java" />
         <option value="$PROJECT_DIR$/src/tree/Tree.java" />
-        <option value="$PROJECT_DIR$/src/tree/Node.java" />
-        <option value="$PROJECT_DIR$/src/calculator/Token.java" />
         <option value="$PROJECT_DIR$/src/test/calculator/InputProcessTest.java" />
         <option value="$PROJECT_DIR$/src/calculator/Main.java" />
+        <option value="$PROJECT_DIR$/src/calculator/Token.java" />
+        <option value="$PROJECT_DIR$/src/tree/Node.java" />
         <option value="$PROJECT_DIR$/src/calculator/Operator.java" />
         <option value="$PROJECT_DIR$/src/test/calculator/CalculateTest.java" />
         <option value="$PROJECT_DIR$/src/calculator/InputProcess.java" />
@@ -278,9 +253,9 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="137" />
-    <option name="y" value="23" />
-    <option name="width" value="1304" />
+    <option name="x" value="200" />
+    <option name="y" value="44" />
+    <option name="width" value="1080" />
     <option name="height" value="749" />
   </component>
   <component name="ProjectView">
@@ -334,10 +309,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tree" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -843,34 +814,34 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="CalculateTest - 2017.08.18 at 17h 19m 32s.xml">
-      <configuration name="CalculateTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CalculateTest - 2017.08.18 at 17h 23m 12s.xml">
-      <configuration name="CalculateTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CalculateTest - 2017.08.18 at 17h 23m 59s.xml">
-      <configuration name="CalculateTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CalculateTest - 2017.08.18 at 17h 34m 14s.xml">
-      <configuration name="CalculateTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CalculateTest - 2017.08.18 at 17h 36m 25s.xml">
-      <configuration name="CalculateTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CalculateTest - 2017.08.18 at 18h 06m 45s.xml">
-      <configuration name="CalculateTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CalculateTest - 2017.08.18 at 18h 07m 21s.xml">
-      <configuration name="CalculateTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CalculateTest - 2017.08.18 at 18h 08m 50s.xml">
-      <configuration name="CalculateTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CalculateTest - 2017.08.18 at 18h 09m 08s.xml">
-      <configuration name="CalculateTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="CalculateTest - 2017.08.18 at 18h 15m 55s.xml">
+      <configuration name="CalculateTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CalculateTest - 2017.08.19 at 16h 33m 37s.xml">
+      <configuration name="CalculateTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CalculateTest - 2017.08.19 at 16h 33m 52s.xml">
+      <configuration name="CalculateTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CalculateTest - 2017.08.19 at 16h 34m 57s.xml">
+      <configuration name="CalculateTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CalculateTest - 2017.08.19 at 17h 40m 49s.xml">
+      <configuration name="CalculateTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CalculateTest - 2017.08.19 at 17h 41m 09s.xml">
+      <configuration name="CalculateTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CalculateTest - 2017.08.19 at 17h 41m 25s.xml">
+      <configuration name="CalculateTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CalculateTest - 2017.08.19 at 23h 26m 52s.xml">
+      <configuration name="CalculateTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CalculateTest - 2017.08.19 at 23h 45m 18s.xml">
+      <configuration name="CalculateTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CalculateTest - 2017.08.19 at 23h 48m 28s.xml">
       <configuration name="CalculateTest" configurationId="JUnit" />
     </history-entry>
   </component>
@@ -885,7 +856,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="137" y="23" width="1304" height="749" extended-state="1" />
+    <frame x="200" y="44" width="1080" height="749" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
@@ -898,17 +869,17 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24946466" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.614897" sideWeight="0.49423248" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.40253565" sideWeight="0.49423248" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32928678" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32440946" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32776934" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21870047" sideWeight="0.48890862" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13787639" sideWeight="0.48890862" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32976446" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32928678" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16561015" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1955684" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32755905" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UML design tool window" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -959,7 +930,15 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="50" />
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/calculator/Calculate.java</url>
+          <line>12</line>
+          <properties />
+          <option name="timeStamp" value="56" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="57" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -968,14 +947,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/leetcode/List.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/calculator/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="585">
@@ -1296,9 +1267,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/src.zip!/java/lang/Integer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="124">
+          <caret line="579" column="0" lean-forward="false" selection-start-line="579" selection-start-column="0" selection-end-line="579" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/calculator/InputProcessTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2760">
+        <state relative-caret-position="3360">
           <caret line="224" column="0" lean-forward="false" selection-start-line="224" selection-start-column="0" selection-end-line="224" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1321,21 +1300,47 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/calculator/CalculateTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="121">
-          <caret line="234" column="30" lean-forward="false" selection-start-line="234" selection-start-column="22" selection-end-line="234" selection-end-column="30" />
+        <state relative-caret-position="3690">
+          <caret line="246" column="33" lean-forward="true" selection-start-line="246" selection-start-column="33" selection-end-line="246" selection-end-column="33" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/calculator/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tree/Node.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+          <folding>
+            <element signature="e#478#479#0" expanded="true" />
+            <element signature="e#752#753#0" expanded="true" />
+            <element signature="e#779#780#0" expanded="true" />
+            <element signature="e#809#810#0" expanded="true" />
+            <element signature="e#837#838#0" expanded="true" />
+            <element signature="e#875#876#0" expanded="true" />
+            <element signature="e#907#908#0" expanded="true" />
+            <element signature="e#947#948#0" expanded="true" />
+            <element signature="e#981#982#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/tree/Tree.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="124">
-          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+        <state relative-caret-position="120">
+          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
           <folding>
             <element signature="e#78#79#0" expanded="true" />
-            <element signature="e#105#106#0" expanded="true" />
+            <element signature="e#198#199#0" expanded="true" />
             <element signature="e#230#231#0" expanded="true" />
             <element signature="e#265#266#0" expanded="true" />
             <element signature="e#292#293#0" expanded="true" />
@@ -1343,74 +1348,46 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/calculator/Token.java">
+    <entry file="file://$PROJECT_DIR$/src/calculator/Operator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+        <state relative-caret-position="180">
+          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
           <folding>
-            <element signature="e#294#295#0" expanded="true" />
-            <element signature="e#327#328#0" expanded="true" />
-            <element signature="e#390#391#0" expanded="true" />
+            <element signature="e#270#271#0" expanded="true" />
+            <element signature="e#304#305#0" expanded="true" />
+            <element signature="e#361#362#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/tree/Node.java">
+    <entry file="file://$PROJECT_DIR$/src/calculator/Token.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="271">
-          <caret line="26" column="29" lean-forward="false" selection-start-line="26" selection-start-column="29" selection-end-line="26" selection-end-column="29" />
+        <state relative-caret-position="207">
+          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
           <folding>
-            <element signature="e#441#442#0" expanded="true" />
-            <element signature="e#469#470#0" expanded="true" />
-            <element signature="e#740#741#0" expanded="true" />
-            <element signature="e#767#768#0" expanded="true" />
-            <element signature="e#797#798#0" expanded="true" />
-            <element signature="e#825#826#0" expanded="true" />
-            <element signature="e#863#864#0" expanded="true" />
-            <element signature="e#895#896#0" expanded="true" />
-            <element signature="e#935#936#0" expanded="true" />
-            <element signature="e#969#970#0" expanded="true" />
+            <element signature="e#336#337#0" expanded="true" />
+            <element signature="e#367#368#0" expanded="true" />
+            <element signature="e#399#400#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/calculator/InputProcess.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="157" column="11" lean-forward="false" selection-start-line="157" selection-start-column="11" selection-end-line="157" selection-end-column="11" />
+        <state relative-caret-position="315">
+          <caret line="205" column="32" lean-forward="false" selection-start-line="205" selection-start-column="32" selection-end-line="205" selection-end-column="32" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#257#264#0" expanded="true" />
-            <element signature="e#8336#8343#0" expanded="true" />
+            <element signature="e#280#287#0" expanded="true" />
+            <element signature="e#12162#12169#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/calculator/Operator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="5" lean-forward="true" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
-          <folding>
-            <element signature="e#230#231#0" expanded="true" />
-            <element signature="e#264#265#0" expanded="true" />
-            <element signature="e#293#294#0" expanded="true" />
-            <element signature="e#321#322#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/calculator/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-145">
-          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/calculator/Calculate.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="113" column="28" lean-forward="true" selection-start-line="113" selection-start-column="28" selection-end-line="113" selection-end-column="28" />
+        <state relative-caret-position="150">
+          <caret line="154" column="103" lean-forward="false" selection-start-line="154" selection-start-column="103" selection-end-line="154" selection-end-column="103" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

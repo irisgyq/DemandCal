@@ -222,7 +222,7 @@ public class CalculateTest {
         double r8 = -8;
         assertTrue(res8 == r8);
 
-        String s9 = "1+log2+6*9/2^3";
+        String s9 = "1+log(2,2)+6*9/2^3";
         double res9 = t0.calculate(t0.createTree(i.tokenize(s9)));
         double r9 = 8.75;
         assertTrue(res9 == r9);
@@ -236,6 +236,22 @@ public class CalculateTest {
         double res11 = t0.calculate(t0.createTree(i.tokenize(s11)));
         double r11 = 3;
         assertTrue(res11 == r11);
+
+        String s12 = "√(1.2-0.2+2^3)";
+        double res12 = t0.calculate(t0.createTree(i.tokenize(s12)));
+        double r12 = 3;
+        assertTrue(res12 == r12);
+
+        String s13 = "cos(1+1)";
+        double res13 = t0.calculate(t0.createTree(i.tokenize(s13)));
+        double r13 = Math.cos(2);
+        assertTrue(res13 == r13);
+
+        String s14 = "1+π-2/2";
+        double res14 = t0.calculate(t0.createTree(i.tokenize(s14)));
+        double r14 = Math.PI;
+        assertTrue(res14 == r14);
+
 
 
     }

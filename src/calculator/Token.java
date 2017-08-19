@@ -1,7 +1,7 @@
 package calculator;
 
 public class Token {
-    private int value;
+    private double value;
     private String type;
 
     public Token(){
@@ -9,12 +9,12 @@ public class Token {
         this.type = "";
     }
 
-    public Token(int value, String type){
+    public Token(double value, String type){
         this.value = value;
         this.type = type;
     }
 
-    public int getValue(){
+    public double getValue(){
         return this.value;
     }
 
@@ -26,7 +26,7 @@ public class Token {
         return this;
     }
 
-    public void setToken(int value, String type){
+    public void setToken(double value, String type){
         this.value = value;
         this.type = type;
     }

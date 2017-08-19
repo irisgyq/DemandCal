@@ -1,7 +1,7 @@
 package tree;
 
 public class Node {
-    private int value;
+    private double value;
     private String type;
     private Node left;
     private Node right;
@@ -13,20 +13,20 @@ public class Node {
         this.right = null;
     }
 
-    public Node(int value, String type) {
+    public Node(double value, String type) {
         this.value = value;
         this.type = type;
         this.left = null;
         this.right = null;
     }
 
-    public int getValue() {
+    public double getValue() {
         return value;
     }
 
     public String getType() { return type;}
 
-    public Node(int value, String type, Node left, Node right) {
+    public Node(double value, String type, Node left, Node right) {
         super();
         this.value = value;
         this.type = type;
