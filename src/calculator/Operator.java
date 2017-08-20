@@ -5,7 +5,7 @@ public enum Operator {
 
     private int value;
 
-    private Operator(int value) {
+    Operator(int value) {
         this.value = value;
     }
 
