@@ -57,7 +57,6 @@ public class Calculate {
                                             n2.setLeft(t.getRoot());
                                             t.setRoot(n2);
                                         }
-                                        t.setRoot(n2);
                                     } else {
                                         n2.setLeft(sub);
                                         n1.setRight(n2);
@@ -184,7 +183,7 @@ public class Calculate {
                         if (n5.getType().equals("Operator") && n4.getType().equals("Number")) {
                             n5.setLeft(n4);
                         }
-                        if (n5.getType().equals("Operator") && i == 0) {
+                        if (n5.getType().equals("Operator") && t.getRoot() == null) {
                             t.setRoot(n5);
                         } else if (i >= 2 && compareOpe(ar.get(i + 1), ar.get(i - 1))) {
                             n3.setRight(n5);
